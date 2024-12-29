@@ -1,0 +1,8 @@
+Tein hienosäätöjä viimeisen videon mukaan. Äänien kohdalla lisäsin myös satunnaisuutta. Laserin äänenkorkeus muuttuu hiukan ettei se ole NIIN yksitoikkoista.
+Spawn Sound Attached sisällä on Pitch Multiplier. Yhdistin siihen vain Random Float in Rangen. Jätin vihollisten räjähtämisen pois. 
+Lisäsin omasta toimesta royalty free taustamusiikkia itse pelissä. "Kevin MacLeod Big Rock - Take the lead"
+
+
+Game Over ruudun kanssa tuli paljon ongelmia. Mutta sain sen toimimaan. Tein Game Over widgetin. HeroCharacter blueprint: Poistín aikaisemmat koodit respawnaamisesta, game over ruutu ei oikein toimi kun hahmo syntyy aina kolmen sekunnin jälkeen uudelleen. Käytin aikaisemmin tehtyä Is Dead booleania. Jos Is Dead on True niin Game Over widget laitetaan päälle. Tässä tilanteessa kävi niin, että viholliset jatkoivat hahmon satuttamista vaikka oli jo kuollut, joten game over ruutu tuli jatkuvasti useaan kertaan. Laitoin ihan alkuun toisen Is Dead booleanin joka pitää huolen, että viholliset satuttavat pelaajaa vain jos Is Dead on false. 
+
+Peli täytyy olla fullscreen jotta kaikki näkyy.
